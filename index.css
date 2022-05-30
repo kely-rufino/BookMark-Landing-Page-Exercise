@@ -1,0 +1,269 @@
+* {
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2em;
+  color: #2e3348;
+}
+
+h4 {
+  border-style: hidden none solid none;
+  border-color: #dee0e7;
+  line-height: 3em;
+}
+h5 {
+  border-style: hidden none dotted none;
+  border-width: 0.4em;
+  border-color: #dee0e7;
+  line-height: 3em;
+}
+h6 {
+  font-size: 0.9em;
+  color: #393a42;
+}
+
+p {
+  font-size: 0.9em;
+  line-height: 2;
+  color: #9b9ca1;
+}
+
+.top-the-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.illustration-hero {
+  padding-top: 2px;
+  margin: 0.5px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 340px;
+}
+
+
+.illustration-hero img {
+  width: 100%;
+}
+
+.illustration-hero-front {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+}
+
+@media (min-width: 400px){
+
+  .illustration-hero img {
+    width: 450px;
+  }
+
+  .illustration-hero-front {
+   right: 20px;
+
+  }
+
+}
+
+.illustration-hero-back {
+  padding-top: 2px;
+  margin: 1px;
+  position: absolute;
+  right: 0;
+  bottom: 12px;
+}
+
+.illustration-features-front {
+  position: absolute;
+  z-index: 1;
+}
+
+.illustration-features-back {
+  padding-top: 2px;
+  margin: 1px;
+  position: absolute;
+  right: 0;
+  bottom: 12px;
+}
+
+@media(min-width: 400px){
+  .illustration-features-back{
+    left: 0;
+  }
+  .illustration-features-front{
+    left: 30px;
+    top: 5px;
+  }
+}
+
+
+
+.buttons_first_part {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 1%;
+}
+
+#chrome {
+  background-color: #5167e0;
+  color: white;
+  box-shadow: 4px 6px 1em 0px #80808036;
+  border-radius: 0.3em;
+  border: none;
+  height: 3.4em;
+  width: 11em;
+}
+
+#firefox {
+  background-color: #edede9b8;
+  color: black;
+  box-shadow: 4px 6px 1em 0px #80808036;
+  border-radius: 0.3em;
+  border: none;
+  height: 3.4em;
+  width: 11em;
+}
+
+.container-extension {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card {
+  height: 22em;
+  width: 18em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1em;
+  border: none;
+  box-shadow: 4px 6px 1em 0px #80808036;
+  padding: 8px 6px;
+}
+.card img{
+  padding: 11px;
+}
+.card-button {
+  background-color: #5167e0;
+  color: white;
+  border-radius: 0.3em;
+  border: none;
+  height: 2.7em;
+  display: flex;
+  align-items: center;
+}
+
+.card-button-faq {
+  background-color: #5167e0;
+  color: white;
+  border-radius: 0.3em;
+  border: none;
+  height: 2.9em;
+  width: 6em;
+  display: flex;
+  align-self: center;
+  margin: 2em 0 2em 6em;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  border: hidden;
+  background-color: transparent;
+  color: white;
+}
+
+.container-faq {
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  border: 1px red solid;
+}
+
+.contact-container {
+  box-sizing: border-box;
+  padding: 65px 20px;
+  background-color: #5167e0;
+  color: white;
+  font-size: small;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact-container p {
+  color: white;
+  font-size: 1.2em;
+  letter-spacing: 5px;
+  margin: 0;
+}
+.contact-container input {
+  border: none;
+  border-radius: 0.3em;
+  padding: 13px 20px;
+  margin: 10px 20px;
+}
+
+.contact-container h2 {
+  font-size: 2em;
+  margin: 0;
+}
+
+.contact-container button {
+  background-color: #fa5959;
+  border: none;
+  border-radius: 0.3em;
+  padding: 13px 20px;
+  margin: 0 20px;
+}
+
+.container-questions {
+  border-style: hidden none solid none;
+  border-color: #dee0e7;
+  line-height: 1em;
+  display: flex;
+  align-items: flex-start;
+}
+
+footer {
+  background-color: #242946;
+  color: white;
+  padding-bottom: 20px;
+}
+
+footer img {
+  width: 150px;
+  margin: 40px 0 20px 0;
+}
+
+.features-list-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.features-list-container a {
+  color: #b7b9cc;
+  text-decoration: none;
+  line-height: 3em;
+  font-weight: 100;
+}
+
+.social-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.social-buttons img {
+  width: 28px;
+}
