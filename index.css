@@ -73,13 +73,18 @@ p {
     width: auto;
     height: 30px;
   }
-  .illustration-hero{
+  .illustration-hero {
     position: absolute;
   }
-  .h1-desktop{
+  .h1-desktop {
     position: relative;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    margin-right: 530px;
+  }
+  .head-content {
+    display: flex;
+    flex-direction: row-reverse;
   }
 }
 
@@ -225,6 +230,7 @@ button {
   display: flex;
   flex-direction: column;
   border: 1px red solid;
+  display: none;
 }
 
 .contact-container {
@@ -306,4 +312,20 @@ footer img {
 
 .nav-bar {
   overflow: hidden;
+}
+
+/* Floating menu */
+.float-menu {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 10;
+  color: white;
+  display: none;
+}
+
+.float-menu .closeButton {
+  border: 1px solid white;
+  padding: 10px;
 }
