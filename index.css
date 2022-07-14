@@ -41,6 +41,53 @@ p {
   padding: 20px;
 }
 
+@media screen and (max-width: 900px) {
+  .links-top {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  img#floatmenu {
+    display: none;
+  }
+  .links-top {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .links-top a {
+    color: black;
+    text-decoration: none;
+    font-weight: lighter;
+  }
+
+  button#login {
+    background-color: #fa5959;
+    border: none;
+    border-radius: 0.3em;
+    padding: 13px 20px;
+    margin: 0 20px;
+  }
+  .top-the-page img {
+    width: auto;
+    height: 30px;
+  }
+  .illustration-hero {
+    position: absolute;
+  }
+  .h1-desktop {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-right: 530px;
+  }
+  .head-content {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}
+
 .illustration-hero {
   padding-top: 2px;
   margin: 0.5px;
@@ -49,7 +96,6 @@ p {
   position: relative;
   height: 340px;
 }
-
 
 .illustration-hero img {
   width: 100%;
@@ -61,17 +107,14 @@ p {
   right: 0;
 }
 
-@media (min-width: 400px){
-
+@media (min-width: 400px) {
   .illustration-hero img {
     width: 450px;
   }
 
   .illustration-hero-front {
-   right: 20px;
-
+    right: 20px;
   }
-
 }
 
 .illustration-hero-back {
@@ -95,17 +138,15 @@ p {
   bottom: 12px;
 }
 
-@media(min-width: 400px){
-  .illustration-features-back{
+@media (min-width: 400px) {
+  .illustration-features-back {
     left: 0;
   }
-  .illustration-features-front{
+  .illustration-features-front {
     left: 30px;
     top: 5px;
   }
 }
-
-
 
 .buttons_first_part {
   display: flex;
@@ -151,7 +192,7 @@ p {
   box-shadow: 4px 6px 1em 0px #80808036;
   padding: 8px 6px;
 }
-.card img{
+.card img {
   padding: 11px;
 }
 .card-button {
@@ -189,6 +230,7 @@ button {
   display: flex;
   flex-direction: column;
   border: 1px red solid;
+  display: none;
 }
 
 .contact-container {
@@ -266,4 +308,24 @@ footer img {
 }
 .social-buttons img {
   width: 28px;
+}
+
+.nav-bar {
+  overflow: hidden;
+}
+
+/* Floating menu */
+.float-menu {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 10;
+  color: white;
+  display: none;
+}
+
+.float-menu .closeButton {
+  border: 1px solid white;
+  padding: 10px;
 }

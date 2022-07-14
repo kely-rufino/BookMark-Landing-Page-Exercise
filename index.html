@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-      <style>
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Rubik:wght@300&display=swap');
-</style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Rubik:wght@300&display=swap");
+    </style>
     <meta charset="UTF-8" />
     <meta name="viewport" content="max-width=600px, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="index.css" media="screen" />
@@ -11,55 +11,101 @@
   </head>
 
   <body>
-    <section>
-      <div class="top-the-page">
-        <img src="images/logo-bookmark.svg" />
-        <img src="images/icon-hamburger.svg" />
+    <!-- Float menu starts here -->
+    <div class="float-menu" id="float_menu">
+      <div class="float-menu-header">
+        <div class="logo"></div>
+        <div class="closeButton" id="float_menu_close">x</div>
       </div>
-      <div class="illustration-hero">
-        <img class="illustration-hero-front" src="images/illustration-hero.svg" />
-        <div class="illustration-hero-back">
-          <img src="images/slice1.svg" />
+      <div>
+        <div>Features</div>
+        <div>Pricing</div>
+        <div>Contact</div>
+      </div>
+      <div>
+        <button>Login</button>
+      </div>
+    </div>
+    <!-- Float menu ends here -->
+    <section>
+      <div class="desktop-set">
+        <div class="top-the-page">
+          <img src="images/logo-bookmark.svg" />
+          <div>
+            <div class="links-top">
+              <a href="#features">FEATURES</a>
+              <a href="#pricing">PRICING</a>
+              <a href="#contact">CONTACT</a>
+              <button id="login" class="card-button">LOGIN</button>
+            </div>
+            <img id="floatmenuButton" src="images/icon-hamburger.svg" />
+          </div>
+        </div>
+        <div class="head-content">
+          <div class="illustration-hero">
+            <img
+              class="illustration-hero-front"
+              src="images/illustration-hero.svg"
+            />
+            <div class="illustration-hero-back">
+              <img src="images/slice1.svg" />
+            </div>
+          </div>
+          <div class="h1-desktop">
+            <div>
+              <h1>A Simple Bookmark Manager</h1>
+              <p>
+                A clean and simple interface to organise your favourite
+                websites. Open a new browser tab and see your sites load
+                instantly. Try it for free
+              </p>
+            </div>
+            <div class="buttons_first_part">
+              <button id="chrome">Get it on Chrome</button>
+              <button id="firefox">Get it on Firefox</button>
+            </div>
+          </div>
         </div>
       </div>
       <div>
-        <h1>A Simple Bookmark Manager</h1>
-        <p>
-          A clean and simple interface to organise your favourite websites. Open
-          a new browser tab and see your sites load instantly. Try it for free
-        </p>
-      </div>
-      <div class="buttons_first_part">
-        <button id="chrome">Get it on Chrome</button>
-        <button id="firefox">Get it on Firefox</button>
-      </div>
-      <div>
-        <h2>Features</h2>
+        <h2 id="features">Features</h2>
         <p>
           Our aim is to make it quick and easy for you to access your favourite
           websites. Your bookmarks sync between your devices so you can access
           them on the go.
         </p>
-          <h4>Simple Bookmarking</h4>
-          <h4>Speedy Searching</h4>
-          <h4>Easy Sharing</h4>
+        <h4>Simple Bookmarking</h4>
+        <h4>Speedy Searching</h4>
+        <h4>Easy Sharing</h4>
       </div>
-    <div>
-      <div class="illustration-hero">
-        <img class="illustration-features-front" src="images/illustration-features-tab-1.svg" alt="tab fetures" />
-        <img class="illustration-features-back" src="images/slice2.svg" alt="slice 2" />
+      <div>
+        <div class="illustration-hero">
+          <img
+            class="illustration-features-front"
+            src="images/illustration-features-tab-1.svg"
+            alt="tab fetures"
+          />
+          <img
+            class="illustration-features-back"
+            src="images/slice2.svg"
+            alt="slice 2"
+          />
+        </div>
+        <h2>Bookmark in one click</h2>
+        <p>
+          Organize your bookmarks however you like. Our simple drag-and-drop
+          interface gives you complete control over how you manage your
+          favourite sites.
+        </p>
       </div>
-      <h2>Bookmark in one click</h2>
-      <p>
-        Organize your bookmarks however you like. Our simple drag-and-drop
-        interface gives you complete control over how you manage your favourite
-        sites.
-      </p>
-    </div>
+    </section>
     <section>
       <div>
-          <h2>Download the extension</h2> 
-          <p>We’ve got more browsers in the pipeline. Please do let us know if you’ve got a favourite you’d like us to prioritize.</p>
+        <h2>Download the extension</h2>
+        <p>
+          We’ve got more browsers in the pipeline. Please do let us know if
+          you’ve got a favourite you’d like us to prioritize.
+        </p>
       </div>
       <div class="container-extension">
         <div class="card">
@@ -69,7 +115,7 @@
           <div class="card-button">
             <button>Add & Install Extension</button>
           </div>
-      </div>
+        </div>
 
         <div class="card">
           <img src="images/logo-firefox.svg" />
@@ -79,29 +125,31 @@
             <button>Add & Install Extension</button>
           </div>
         </div>
-      
+
         <div class="card">
-            <img src="images/logo-opera.svg" />
-            <h3>Add to Opera</h3>
-            <h5>Minimum version 46</h5>
-            <div class="card-button">
-              <button >Add & Install Extension</button>
-            </div>
+          <img src="images/logo-opera.svg" />
+          <h3>Add to Opera</h3>
+          <h5>Minimum version 46</h5>
+          <div class="card-button">
+            <button>Add & Install Extension</button>
           </div>
         </div>
       </div>
     </section>
-    
+
     <section>
       <div class="container-extension">
         <h2>Frequently Asked Questions</h2>
-          <p>Here are some of our FAQs. If you have any
-          other questions you’d like answered please feel free to email us.</p>
-        <cs="container-faq">
+        <p>
+          Here are some of our FAQs. If you have any other questions you’d like
+          answered please feel free to email us.
+        </p>
+        <div class="container-faq">
           <div class="container-questions">
-          <!-- Question 1 -->
-          <h6>What is Bookmark?</h6>
-        </div>
+            <!-- Question 1 -->
+            <h6>What is Bookmark?</h6>
+          </div>
+
           <!-- Answer 1
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
@@ -109,10 +157,10 @@
             quis quam ornare mattis.
           </p>
         -->
-        <div class="container-questions"> 
-          <!-- Question 2 -->
-          <h6>How can I request a new browser?</h6>
-        </div>
+          <div class="container-questions">
+            <!-- Question 2 -->
+            <h6>How can I request a new browser?</h6>
+          </div>
           <!-- Answer 2
           <p>
             Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa,
@@ -123,9 +171,9 @@
             imperdiet.
           </p> -->
           <div class="container-questions">
-          <!-- Question 3 -->
-          <h6>Is there a mobile app?</h6>
-        </div>
+            <!-- Question 3 -->
+            <h6>Is there a mobile app?</h6>
+          </div>
           <!-- Answer 3 
           <p>
             Sed consectetur quam id neque fermentum accumsan. Praesent luctus
@@ -134,41 +182,44 @@
             ex et ultricies bibendum.
           </p> -->
           <div class="container-questions">
-          <!-- Question 4 -->
-          <h6>What about other Chromium browsers?</h6>
-        </div>
-        <!-- Answer 4
+            <!-- Question 4 -->
+            <h6>What about other Chromium browsers?</h6>
+          </div>
+          <!-- Answer 4
         <p>Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi,
         at euismod dui. Aliquam vitae neque eget nisl gravida pellentesque non
         ut velit.</p> -->
-        <div class="card-button-faq">
-        <button>More Info</button>
+          <div class="card-button-faq">
+            <button>More Info</button>
+          </div>
         </div>
       </div>
-      </div>
-      </section>
     </section>
 
     <section class="contact-container">
       <p>35,000+ ALREADY JOINED</p>
       <h2>Stay up-to-date with what we’re doing</h2>
-      <input type="email" placeholder="Enter your email address" required>
+      <input
+        id="contact"
+        type="email"
+        placeholder="Enter your email address"
+        required
+      />
       <button>Contact Us</button>
     </section>
 
     <section>
       <footer>
-      <img src="images/logo-bookmark-white.svg" alt="bookmark-logo" />
-      <div class="features-list-container">
-        <a href="#">FEATURES</a>
-        <a href="#">PRICING</a>
-        <a href="#">CONTACT</a>
-       
-      </div>
-      <div class="social-buttons">
-        <img src="images/icon-facebook.svg" alt=" facebook-icon">
-        <img src="images/icon-twitter.svg" alt="twitter-logo">
-      </div>
+        <img src="images/logo-bookmark-white.svg" alt="bookmark-logo" />
+        <div class="features-list-container">
+          <a href="#features">FEATURES</a>
+          <a href="#pricing">PRICING</a>
+          <a href="#contact">CONTACT</a>
+        </div>
+        <div class="social-buttons">
+          <img src="images/icon-facebook.svg" alt=" facebook-icon" />
+          <img src="images/icon-twitter.svg" alt="twitter-logo" />
+        </div>
       </footer>
     </section>
 
@@ -180,6 +231,7 @@
         >. Coded by <a href="#">Kely Rufino</a>.
       </p>
     </footer>
+    <script src="./actions.js"></script>
   </body>
 </html>
 
